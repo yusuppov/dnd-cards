@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import ZipperIcon from '../../../assets/icons/zipper.svg?react';
 import NotepadIcon from '../../../assets/icons/notepad.svg?react';
 import { ItemType, BoardType, DragHandlerArgs, TaskProps } from '../types/index';
@@ -17,7 +18,6 @@ import {
   CountNumber,
 } from './Tasks.styled';
 import { backGroundColorItem, ColorItems, taskListBcColor } from '../constants';
-import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../../store/store';
 import { updateTaskStatus, addNewTask } from '../../../features/tasks/tasksSlice';
 import { ProgressBar } from '../../ProgressBar';
